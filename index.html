@@ -80,10 +80,7 @@
   .project-img-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: repeating-linear-gradient(45deg, #0d0d1a, #0d0d1a 10px, #111120 10px, #111120 20px); z-index: 0; }
   .project-img-placeholder span { font-size: 10px; letter-spacing: 0.2em; color: var(--amber-dim); text-transform: uppercase; }
   .project-img-placeholder code { font-size: 11px; color: var(--muted); letter-spacing: 0.05em; background: rgba(232,150,10,0.06); padding: 4px 10px; border: 1px solid var(--border); }
-
-  /* Resim varsa placeholder gizlenir */
   .slider.has-images .project-img-placeholder { display: none; }
-
   .project-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,8,16,0.9) 0%, rgba(8,8,16,0.2) 60%, transparent 100%); pointer-events: none; z-index: 2; }
 
   .project-info { padding: 24px 28px 28px; }
@@ -94,7 +91,6 @@
   .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag { font-size: 10px; letter-spacing: 0.1em; color: var(--amber-dim); border: 1px solid rgba(232,150,10,0.2); padding: 4px 10px; text-transform: uppercase; }
 
-  /* Slider */
   .slider { position: relative; width: 100%; height: 100%; }
   .slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.4s ease; z-index: 1; }
   .slider img.active { opacity: 0.82; }
@@ -175,6 +171,19 @@
   </ul>
 </nav>
 
+<section id="hero">
+  <p class="hero-tag">Web &amp; Yazılım Geliştirici</p>
+  <h1>Kod ile<br><em>yükselen</em><br>projeler.</h1>
+  <p class="hero-sub">Sıfırdan özel web uygulamaları, e-ticaret siteleri ve dijital çözümler geliştiriyorum. Temiz kod, hızlı teslimat.</p>
+  <div class="hero-cta">
+    <a href="#projeler" class="btn-primary">Projeleri Gör</a>
+    <a href="#iletisim" class="btn-ghost">İletişime Geç</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Aşağı</span>
+  </div>
+</section>
 
 <div class="section-divider"></div>
 
@@ -219,10 +228,7 @@
           <img src="r2.jpg" alt="Rent a Car 2">
           <img src="r3.jpg" alt="Rent a Car 3">
           <img src="r4.jpg" alt="Rent a Car 4">
-          <div class="project-img-placeholder">
-            <span>Görsel</span>
-            <code>r.jpg</code>
-          </div>
+          <div class="project-img-placeholder"><span>Görsel</span><code>r.jpg</code></div>
         </div>
         <button class="slider-prev" onclick="slideImg(1,-1)">&#8249;</button>
         <button class="slider-next" onclick="slideImg(1,1)">&#8250;</button>
@@ -233,9 +239,7 @@
         <h3 class="project-title">Rent a Car</h3>
         <p class="project-desc">Araç kiralama firması için rezervasyon sistemi, araç kataloğu ve online ön başvuru modülü.</p>
         <div class="project-tags">
-          <span class="tag">ASP.NET</span>
-          <span class="tag">MSSQL</span>
-          <span class="tag">Kurumsal</span>
+          <span class="tag">ASP.NET</span><span class="tag">MSSQL</span><span class="tag">Kurumsal</span>
         </div>
       </div>
     </div>
@@ -246,10 +250,7 @@
           <img src="s1.jpg" alt="Cam 1">
           <img src="s2.jpg" alt="Cam 2">
           <img src="s3.jpg" alt="Cam 3">
-          <div class="project-img-placeholder">
-            <span>Görsel</span>
-            <code>s1.jpg</code>
-          </div>
+          <div class="project-img-placeholder"><span>Görsel</span><code>s1.jpg</code></div>
         </div>
         <button class="slider-prev" onclick="slideImg(2,-1)">&#8249;</button>
         <button class="slider-next" onclick="slideImg(2,1)">&#8250;</button>
@@ -260,9 +261,7 @@
         <h3 class="project-title">Cam &amp; Yapı</h3>
         <p class="project-desc">Cam sektörü firması için ürün kataloğu, referans galerisi ve teklif talep sistemi.</p>
         <div class="project-tags">
-          <span class="tag">ASP.NET</span>
-          <span class="tag">MSSQL</span>
-          <span class="tag">Kurumsal</span>
+          <span class="tag">ASP.NET</span><span class="tag">MSSQL</span><span class="tag">Kurumsal</span>
         </div>
       </div>
     </div>
@@ -275,10 +274,7 @@
           <img src="f2.jpg" alt="Fizyo 2">
           <img src="f3.jpg" alt="Fizyo 3">
           <img src="f4.jpg" alt="Fizyo 4">
-          <div class="project-img-placeholder">
-            <span>Görsel</span>
-            <code>f.jpg</code>
-          </div>
+          <div class="project-img-placeholder"><span>Görsel</span><code>f.jpg</code></div>
         </div>
         <button class="slider-prev" onclick="slideImg(3,-1)">&#8249;</button>
         <button class="slider-next" onclick="slideImg(3,1)">&#8250;</button>
@@ -289,9 +285,7 @@
         <h3 class="project-title">Fizyoterapist Kliniği</h3>
         <p class="project-desc">Fizyoterapi kliniği için randevu sistemi, hizmet tanıtım sayfaları ve hasta bilgi formu.</p>
         <div class="project-tags">
-          <span class="tag">ASP.NET</span>
-          <span class="tag">MSSQL</span>
-          <span class="tag">Kişisel</span>
+          <span class="tag">ASP.NET</span><span class="tag">MSSQL</span><span class="tag">Kişisel</span>
         </div>
       </div>
     </div>
@@ -312,20 +306,20 @@
       <a href="https://instagram.com/altdev" class="contact-link">Instagram</a>
     </div>
   </div>
-  <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+  <form class="contact-form reveal" action="https://formspree.io/f/mdawjlgv" method="POST">
     <div class="form-row">
       <div class="form-group">
         <label>Ad</label>
-        <input type="text" placeholder="Adınız" required>
+        <input type="text" name="ad" placeholder="Adınız" required>
       </div>
       <div class="form-group">
         <label>E-posta</label>
-        <input type="email" placeholder="mail@domain.com" required>
+        <input type="email" name="email" placeholder="mail@domain.com" required>
       </div>
     </div>
     <div class="form-group">
       <label>Proje Türü</label>
-      <select>
+      <select name="proje_turu">
         <option value="" disabled selected>Seçin...</option>
         <option>Web Sitesi</option>
         <option>Web Uygulaması</option>
@@ -336,7 +330,7 @@
     </div>
     <div class="form-group">
       <label>Mesaj</label>
-      <textarea placeholder="Projeniz hakkında kısaca anlatın..." required></textarea>
+      <textarea name="mesaj" placeholder="Projeniz hakkında kısaca anlatın..." required></textarea>
     </div>
     <button type="submit" class="btn-submit">Gönder →</button>
   </form>
@@ -401,7 +395,6 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 reveals.forEach(r => observer.observe(r));
 
-// Slider
 const sliderState = {};
 function initSliders() {
   [1, 2, 3].forEach(id => {
@@ -447,21 +440,6 @@ setInterval(() => {
     if (sliderState[id] && sliderState[id].total > 1) slideImg(id, 1);
   });
 }, 3000);
-
-// Form submit
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
-  btn.textContent = 'Gönderildi ✓';
-  btn.style.background = '#2a6a2a';
-  btn.style.color = '#a0e0a0';
-  setTimeout(() => {
-    btn.textContent = 'Gönder →';
-    btn.style.background = '';
-    btn.style.color = '';
-    e.target.reset();
-  }, 3000);
-}
 </script>
 </body>
 </html>
